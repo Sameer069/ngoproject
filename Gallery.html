@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevandhara</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="logo.jpg">
+    <style>
+      body{
+  font: 15px/1.5 'Raleway';
+  padding:0;
+  margin:0;
+  background: #f3f8ff;
+}
+/*scrolling*/
+html {
+  scroll-behavior: smooth;
+}
+/*upper border part*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  nav{
+    height: 80px;
+    background: #2c3e50;
+  }
+  nav img{
+  width: 160px;
+  position: absolute;
+  filter: invert(100);
+  top: 1px;
+  left: 3%;
+  }
+  nav ul {
+    display: flex;
+    margin-right: 25px;
+    justify-content: center;
+  }
+  nav ul li{
+    margin: 0px 15px;
+    line-height: 80px;
+  }
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    padding: 5px 0px;
+    text-transform: uppercase;
+  }
+  /* nav ul li a::before{
+        content: '';
+        position: absolute;
+  
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: white;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 1s linear;
+  } */
+  /* nav ul li a:hover{
+    transform: scale(1);
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 4px;
+    
+    border-radius:10px;
+  } */
+  nav ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  nav ul li a {        
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 60%;
+    height: 1px;
+    opacity: 0;
+    background-color: #a2d5f2;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+        body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+h1 {
+  color: coral;
+}
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+    &:hover img {
+      filter: grayscale(0);
+    }
+    &:hover {
+      border-color: coral;
+    }
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+    }
+    p {
+      margin: 5px 0;
+      padding: 0;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}
+#bottom {  /*mail button*/
+    padding: 15px; /*blue border size*/
+    color: #ffffff;
+    background: #00a8cc;
+    border-top: #00a8cc 3px solid;
+    min-height: 60px;
+    font-family: "Raleway";
+}
+
+#bottom h1{
+  float:left;
+  color: #fff;
+  font-size: 28px;
+   font-weight: 595;
+}
+
+#bottom form {
+  float:center;
+  
+}
+
+#bottom input[type="email"]{
+  padding:4px;
+  height: 25px;
+  width:250px;
+  padding: 6px 10px;
+  font-family: "Raleway";
+  background: #00a8cc;
+  border: solid 2px #fff;
+  color: #fff;
+}
+
+#bottom input[type="email"]:hover{
+  background-color: #fff;
+  color: #00a8cc;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+#bottom input[type="email"]:hover::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #00a8cc;
+  opacity: 1; /* Firefox */
+}
+
+#bottom input[type="email"]:hover:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+#bottom input[type="email"]:hover::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+.button_1 { /*subscribe button*/
+    font-family: "Raleway";
+    height: 41px;
+    background: #00a8cc;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    border-radius: 50px;
+    border: solid 2px #fff;
+}
+
+.button_1:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+#bottomcontainer {
+    padding: 15px;
+    color: #ffffff;
+    background: #000;
+    border-top: #000 3px solid;
+    min-height: 70px;
+    font-family: "Raleway";
+}
+
+.bottomcontainer{
+  width: 80%;
+  margin: auto;
+}
+
+#bottomcontainer h1{
+  float:left;
+  margin-left: 100px;
+}
+
+#bottomcontainer form {
+  float:right;
+  margin-top:15px;
+  margin-right: 100px;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+ /* .center{
+    padding-top: 15px;
+    text-align: center;
+ } */
+ .icons {
+  margin-top: 25px;
+}
+.icons a {
+  display: inline-block;
+  width: 32px;
+  height: 35px;
+  cursor: pointer;
+  background: #00a8cc;
+  background-color:#00a8cc;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px; /*dist bet icons*/
+  margin-bottom: 5px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="logo2.png" alt="mylogo">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="donation.html">Donations</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="login.html">login</a></li>
+                    
+                </ul>
+            </nav>
+            
+        </div>
+    <h1>OUR GALLERY</h1>
+<div class="grid-container">
+  <div>
+    <img class='grid-item grid-item-1' src='child.jpg' alt=''>
+    <p>"gorup"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-2' src='2.jpg' alt=''>
+    <p>"prizes"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-3' src='4.jpg' alt=''>
+    <p>"childrenday celebration"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-4' src='annualday.jpg' alt=''>
+    <p>"Annualday"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-5' src='gorupchild.jpg' alt=''>
+    <p>"helping children"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-6' src='football.jpg' alt=''>
+    <p>"play football"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-7' src='addition.jpg' alt=''>
+    <p>"addition"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-8' src='ball.jpg' alt=''>
+    <p>"Game"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-9' src='award.jpg' alt=''>
+    <p>"Adevertisement"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='5.jpg' alt=''>
+    <p>"Winner"</p>
+  </div>
+</div>
+<section id="bottom">
+  <center>
+    <div class="container">
+        <h1>Subscribe to our newsletter and follow us on our social media platforms to get daily updates or mail us for any queries</h1>
+        <div class="form">
+          <form name="suscribe" method="POST">
+              <!-- <input style=" border-radius: 50px" type="email" placeholder="Enter Email..." required> -->
+              <p>
+            <input type="email" name="email" style=" border-radius: 50px" type="email" placeholder="Enter Email..." required />
+           <button type="submit" class="button_1">Subscribe</button>
+         </p>
+          </form>
+      </div>
+      </div>
+      <div class="icons">
+          <a href="https://m.facebook.com/"><i class='bx bxl-facebook'></i></a>
+          <a href="https://mobile.twitter.com/login?lang=en"><i class='bx bxl-twitter' ></i></a>
+    
+          
+          <a href="https://www.instagram.com/accounts/login/?hl=en"><i class='bx bxl-instagram' ></i></a>
+          <a href="https://mail.google.com/mail/u/0/"><i class='bx bxl-gmail' ></i></a>
+      </div>
+      </center>
+      </div>
+     </section>
+</footer>
+</body>
+</html>
