@@ -1,0 +1,188 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>Jeevandhara login from </title>
+<link rel="icon" href="logo.jpg">
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:black;  
+}  
+button {   
+       background-color:grey;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        margin: auto;
+        width: 300px;
+        height: 250px;
+        /* border: 3px solid #f1f1f1;    */
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid rgb(49, 0, 128);   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color:burlywood;  
+    }   
+    body{
+  font: 15px/1.5 'Raleway';
+  padding:0;
+  margin:0;
+  background: #f3f8ff;
+}
+/*scrolling*/
+html {
+  scroll-behavior: smooth;
+}
+/*upper border part*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  nav{
+    height: 80px;
+    background: #2c3e50;
+    margin-left: -6px;
+    margin-right: 36px;
+  }
+  nav img{
+  width: 160px;
+  position: absolute;
+  filter: invert(100);
+  top: 26px;
+  left: 3%;
+  }
+  nav ul {
+    display: flex;
+    margin-right: 25px;
+    justify-content: center;
+  }
+  nav ul li{
+    margin: 0px 15px;
+    line-height: 80px;
+  }
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    padding: 5px 0px;
+    text-transform: uppercase;
+  }
+  /* nav ul li a::before{
+        content: '';
+        position: absolute;
+  
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: white;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 1s linear;
+  } */
+  /* nav ul li a:hover{
+    transform: scale(1);
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 4px;
+    
+    border-radius:10px;
+  } */
+  nav ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  nav ul li a {        
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 60%;
+    height: 1px;
+    opacity: 0;
+    background-color: #a2d5f2;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+</style>   
+</head>    
+<body>    
+    <header>
+        <div class="container">
+            <nav>
+                <img src="logo2.png" alt="mylogo">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="donation.html">Donations</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="login.html">login</a></li>
+                    
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+    
+    <center> <h1> Login Form </h1> </center>   
+    <form action="tut1.html">  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+           <button type="submit" onclick="myfun()"> login</button> 
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Forgot <a href="#"> password? </a>   
+        </div>   
+    </form>    
+    
+    <script>
+        function myfun(){
+            window.location.href="food.html";
+        }
+    </script> 
+</body>     
+</html>
